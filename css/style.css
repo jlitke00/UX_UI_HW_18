@@ -27,7 +27,7 @@
 
 .heroBar {
     background-color: #E07500;
-    width: 100%;
+    width: 85%;
    
    
     display: flex;
@@ -42,7 +42,7 @@ h1 {
     color: white;
     font-family: 'jost';
     font-size: 120px;
-    margin-left: 200px;
+  
     margin-top: 1px;
     
     
@@ -53,7 +53,7 @@ h2 {
     font-family: 'open sans';
     font-size: 45px;
     
-    margin-left: 200px;
+    
     line-height: 1px;
    
 }
@@ -87,7 +87,7 @@ li {
     margin-top: 163px;
 }
 
-p {
+.heroWords {
     color: #777777;
     font-family: 'open sans';
     font-weight: 700;
@@ -170,6 +170,22 @@ h6 {
   
   }
 
-  .downArrow {
+  .downArrowTop {
     margin-left: 10px;
+  }
+
+  .bottomIndicator {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 20%;
+    
+  
+  }
+
+  .mySkills {
+    margin-left: 80%;
+  }
+  .mySkillsIndicator {
+    Margin-left: 10px;
   }
