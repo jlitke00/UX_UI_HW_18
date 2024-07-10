@@ -1,7 +1,7 @@
 .open-sans {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300px;
+    font-weight: 300;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
@@ -10,7 +10,7 @@
   .jost {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300px;
+    font-weight: 300;
     font-style: normal;
   }
 
@@ -51,7 +51,7 @@
 
 h1 {
     color: white;
-    font-family: 'jost';
+    font-family: 'Jost';
     font-size: 120px;
     margin-top: 1px;
     
@@ -59,9 +59,9 @@ h1 {
 
 h2 {
     color: white;
-    font-family: 'open sans';
+    font-family: 'Open Sans';
     font-size: 45px;
-    line-height: 1px;
+    line-height: 1.2px;
 }
 
 #myPic {
@@ -74,8 +74,8 @@ h2 {
 
 li {
     color: white;
-    font-family: 'open sans';
-    font-style: bold;
+    font-family: 'Open Sans';
+    font-style: 600;
     font-size: 23px;
     margin: 25px;
     font-weight: 600;
@@ -92,7 +92,7 @@ li {
 
 .heroWordsBelow {
     color: #777777;
-    font-family: 'open sans';
+    font-family: 'Open Sans';
     font-weight: 700;
     margin-left: 15%;
     font-size: 25.25px;
@@ -100,7 +100,7 @@ li {
 
 button {
     background-color: #E07500;
-    font-family: 'jost';
+    font-family: 'Jost';
     font-weight: 700;
     font-size: 24px;
     border-radius: 8px;
@@ -122,14 +122,14 @@ button {
 
 h3 {
     color: white;
-    font-family: 'open sans';
+    font-family: 'Open Sans';
     font-size: 23px;
 }
 
 h4 {
     color: white;
     font-weight: 700;
-    font-family: 'open sans';
+    font-family: 'Open Sans';
     text-align: center;
 
    
@@ -258,7 +258,7 @@ h5 {
 
 .viewMoreButton {
     background-color: #E07500;
-    font-family: 'jost';
+    font-family: 'Jost';
     font-weight: 700;
     font-size: 24px;
     border-radius: 8px;
@@ -272,7 +272,7 @@ h5 {
 
 .skillsHeader {
     color: #000;
-    font-family: Jost;
+    font-family: 'Jost';
     font-size: 34px;
     font-style: normal;
     font-weight: 700;
@@ -283,7 +283,7 @@ h5 {
 .skillWords {
     color: #777;
     text-align: center;
-    font-family: "Jost";
+    font-family: 'Jost';
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -295,7 +295,7 @@ h5 {
     display: flex;
     margin-top: 50px;
    
-   width: 100%;
+   width: 100vw;
    
    
    
@@ -366,7 +366,7 @@ h5 {
 .caption {
     display:block;
     color: #000;
-    font-family: Jost;
+    font-family: 'Jost';
     font-size: 34px;
     font-style: normal;
     font-weight: 600;
@@ -375,7 +375,7 @@ h5 {
 
 .toolsIKnow {
     color: #000;
-    font-family: Jost;
+    font-family: 'Jost';
     font-size: 34px;
     font-style: normal;
     font-weight: 700;
@@ -388,32 +388,30 @@ h5 {
 @media only screen and (max-width: 600px) {
     .flexContainer {
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
     }
     .flexContainerTools {
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
     }
-    .bottomIndicator {
-        flex-direction: column;
-        width: 100%;
-    }
-    .topIndicator {
-        flex-direction: column;
-        width: 100%;
-    }
+    
+    
     #myPic {
         flex-direction: column;
         width: 100%;
     }
     .heroBar {
         flex-direction: column;
-        width: 100%;
+        width: 85vw;
     }
     .workGrid {
         display: grid;
         grid-template-areas: "project1Info" "project1Image" "project2Info" "project2Image" "project3Info" "project3Image";
-        grid-template-rows: 405px 405px 405px 405px 405px 405px;
+        grid-template-rows: repeat(6, 405px);
         grid-template-columns: 1fr;
         margin-top: 100px;
     }
@@ -458,6 +456,13 @@ h5 {
         grid-area: 6 / 1;
        
     }
+    .inline-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   
 
        
 
