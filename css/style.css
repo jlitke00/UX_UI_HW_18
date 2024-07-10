@@ -105,7 +105,7 @@ button {
     font-size: 24px;
     border-radius: 8px;
     position: absolute;
-    left: 50%;
+    left: 50vw;
     width: 228px;
     height: 43px;
     color: white;
@@ -403,10 +403,12 @@ h5 {
     #myPic {
         flex-direction: column;
         width: 100%;
+        margin-top: 30px;
     }
     .heroBar {
         flex-direction: column;
-        width: 85vw;
+        width: 75vw;
+        margin-left: 0;
     }
     .workGrid {
         display: grid;
@@ -414,6 +416,7 @@ h5 {
         grid-template-rows: repeat(6, 405px);
         grid-template-columns: 1fr;
         margin-top: 100px;
+        margin-left: 0;
     }
     .project1Info {
         grid-area: 1 / 1;
@@ -461,7 +464,50 @@ h5 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-left: 0;
+       
     }
+
+    .heroWordsBelow {
+        font-size: 14px; 
+        margin-left: 0; 
+        text-align: left;
+    }
+    
+   
+
+ 
+    h2 {
+        color: white;
+        font-family: 'Open Sans';
+        font-size: 35px;
+        line-height: 1.2px;
+        
+        
+    }
+    h1 {
+        color: white;
+        font-family: 'Jost';
+        font-size: 100px;
+        
+        
+        
+    }
+    .getConnected {
+        margin-left: 0; 
+        text-align: center;
+        margin-top: 20px; 
+    }
+    .footerButtons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+
+    
+
    
 
        
